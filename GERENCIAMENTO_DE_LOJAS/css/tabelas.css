@@ -1,0 +1,41 @@
+/* CONTAINER RESPONSIVO PARA TODAS AS TABELAS */
+.table-container {
+    width: 100%;
+    overflow-x: auto;  /* scroll somente quando necessário */
+    margin-bottom: 20px;
+}
+
+/* TABELA */
+.table-container table {
+    width: max-content;   /* mantém largura natural da tabela */
+    border-collapse: collapse;
+    background: white;
+}
+
+/* CÉLULAS */
+.table-container th,
+.table-container td {
+    padding: 10px 14px;
+    border: 1px solid #ddd;
+    white-space: nowrap;   /* impede quebra das colunas */
+}
+
+/* CABEÇALHO */
+.table-container th {
+    background: #f3f3f3;
+    font-weight: bold;
+    text-align: left;
+}
+
+/* ZEBRADO OPCIONAL */
+.table-container tr:nth-child(even) {
+    background: #fafafa;
+}
+
+/* RESPONSIVIDADE OPCIONAL PARA CELULARES */
+@media (max-width: 480px) {
+    .table-container th,
+    .table-container td {
+        padding: 8px;
+    }
+}

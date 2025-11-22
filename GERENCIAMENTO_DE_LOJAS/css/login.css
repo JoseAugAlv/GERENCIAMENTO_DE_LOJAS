@@ -1,0 +1,74 @@
+
+/* Fundo da página */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #3b82f6, #1e3a8a);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Card de login */
+.login-container {
+    background: white;
+    width: 90%;
+    max-width: 380px;
+    padding: 30px 25px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+/* Título */
+.login-container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #1e1e1e;
+}
+
+/* Labels e inputs */
+.login-container label {
+    display: block;
+    text-align: left;
+    font-size: 15px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 18px;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+/* Botão */
+.login-container input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background: #2563eb;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: .2s;
+}
+
+.login-container input[type="submit"]:hover {
+    background: #1d4ed8;
+}
+
+/* Mensagem de erro */
+.login-erro {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
